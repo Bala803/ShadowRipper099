@@ -5,7 +5,7 @@ name: Shadow Ripping Tools
 on:
   workflow_dispatch:
     inputs:
-      code:
+      code:& "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AQlEd8ymDwgGfJLibdiim9vwNxugoyNSMl3gxnVVZEC-jWPsVROyqs8kgGdYn2JaHE7k1w" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME
         description: Paste CRD's 2nd Code
         required: true
 
